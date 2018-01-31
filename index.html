@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- All HTML Pages are wrapped in <html> -->
+<html lang="en">
+
+<!-- <head> includes any css (<link>), <title>, and <meta> info-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Wireframe</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<!-- All page content goes in <body> tags -->
+<body>
+  <!-- Create a div to wrap all content and apply a width and margin to, forcing all child elements to adhere to container's rules -->
+  <div class="container">
+    <!-- Make header tag a block level, full-width element -->
+    <header>header</header>
+    <!-- Make nav tag a block level, full-width element -->
+    <nav>nav</nav>
+
+    <!-- Since the next "row" is containing two elements, let's wrap this in a container so we only need to worry about positioning them inside the container rather than the whole page -->
+    <div class="container" id="main-body">
+      <!-- Float Section left and give it about 60% of the width -->
+      <section>
+        <!-- Create Article tag -->
+        Section
+        <article>
+          Article
+          <!-- create H1 tag inside of article -->
+          <h1>H1, H2, H3</h1>
+          <!-- create p tag inside of article -->
+          <p>p</p>
+
+        </article>
+
+      </section>
+
+      <!-- Float Aside right and give it about 30% of the width -->
+      <aside>
+        aside
+      </aside>
+
+    </div>
+    <!-- END CONTAINER -->
+
+    <!-- Make footer tag a block level, full-width element  -->
+    <footer>footer</footer>
+  </div>
+
+</body>
+
+</html>

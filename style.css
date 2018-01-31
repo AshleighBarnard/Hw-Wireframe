@@ -1,0 +1,76 @@
+/* This sets all margins/padding/widths/heights to be drawn from the border, and not the content */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a bunch of global styles that can be carried over into all HTML child elements (color, font-family, font-size, etc) */
+body {
+  background-color: #555;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply same background color to multiple elements (comma separated) */
+header,
+nav,
+section,
+aside,
+h1,
+h2,
+h3,
+p,
+footer {
+  background-color: #ddd;
+}
+
+/* Apply separate styles to these elements only */
+header, nav, footer {
+  padding: 40px;
+  margin: 10px 0;
+}
+
+/* Apply styling to all section tags */
+section {
+  padding: 30px 10px 10px 10px;
+  width: 65%;
+  float:left;
+}
+
+/* Apply styling to all article tags */
+article {
+  padding: 20px;
+  background-color: #555;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Apply styling to all h1,h2,h3 and p tags */
+h1,h2,h3,p {
+  color: #555;
+  padding: 20px;
+}
+
+/* Apply styling to all aside tags */
+aside {
+  padding: 30px;
+  width: 32%;
+  float: right;
+  min-height: 316px;
+}
+
+/* Apply styling to all footer tags, use clear: both to make sure it comes below floated elements above */
+footer {
+  clear:both;
+  margin-top: 10px;
+}
+
+/* Apply a container class to wrap all elements and position it on the page for them */
+.container {
+  width: 960px;
+  margin: 10px auto;
+  display: inline-block;
+}
